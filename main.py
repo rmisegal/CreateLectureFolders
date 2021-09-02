@@ -35,7 +35,7 @@ def Genratefolders(name):
 
         if not os.path.exists(mynewsubfolder):
             os.mkdir(mynewsubfolder)
-            print(mainfolder)
+            # print(mainfolder)
     return mynewsubfolder
 
 
