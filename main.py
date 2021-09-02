@@ -6,7 +6,8 @@ import os
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def genrateFolders(name):
+def Genratefolders(name):
+    mynewsubfolder = name
     cwd = os.getcwd()
     print(cwd)
 
@@ -26,15 +27,17 @@ def genrateFolders(name):
         print(path + ' : is NOT a directory')
 
     # Create a directory
-    mainFolder = "C:\\Users\\gal-t\\OneDrive - post.bgu.ac.il\\Ofer Hadar\\הוראה\\פייטון\\שנקר\\קורס 2020\\2020"
+    mainfolder = "C:\\Users\\gal-t\\OneDrive - post.bgu.ac.il\\Ofer Hadar\\הוראה\\פייטון\\שנקר\\קורס 2020\\2020"
     for i in range(14):
-        folderName = f'{i:02d}'
-        dir = os.path.join(mainFolder, "הרצאה " + folderName)
-        if not os.path.exists(dir):
-            os.mkdir(dir)
+        myfoldername = f'{i:02d}'
+        mynewsubfolder = os.path.join(mainfolder, "הרצאה " + myfoldername)
+        print(mynewsubfolder)
+
+        #if not os.path.exists(dir):
+        #    os.mkdir(mydir)
+    return mynewsubfolder
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    genrateFolders('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    Genratefolders('PyCharm')
